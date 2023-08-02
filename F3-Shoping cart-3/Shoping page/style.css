@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.container-fluid{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 4vw;
+    z-index: 1000;
+    justify-content: space-between;
+    padding: 2vw;
+    align-items: center;
+    font-size: 25px;
+}
+.navbar a{
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+.navbar-nav{
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    opacity: 0.8;
+}
+
+/* sidebar  */
+
+.sidebar{
+    border: 2px solid black;
+    width: 15vw;
+    height: 45.3vw;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    top: 0;
+    background-color: black;
+    color: white;
+    font-family: inter,sans-serif;
+}
+.sidebar-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#colors-div{
+    border-top: 2px solid gray;
+   border-bottom: 2px solid gray;
+   height: 10vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 2px;
+   
+}
+.sidebar-container input{
+    margin-left: 20px;
+}
+.sidebar-container h4{
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+
+#sizes{
+   border-bottom: 2px solid gray;
+   height: 10vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 2px;
+}
+
+#rating{
+   border-bottom: 2px solid gray;
+   height: 10vw;
+   margin-top: 10px;
+}
+#rating input{
+   margin-top: 2vw;
+    width: 80%;
+    color: white;
+}
+#rating .label-left{
+    float: left;
+    margin-top: 50px;
+   position: relative;
+  
+}
+#rating .label-right{
+    float: right;
+   position: relative;
+   margin-left: 13px;
+}
+
+#price-range{
+    display: flex;
+    flex-direction: column;
+   gap: 8px;
+}
+#filterbtn{
+    margin-top: 1vw;
+    width: 9vw;
+    height: 2vw;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+.filterbtn{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+

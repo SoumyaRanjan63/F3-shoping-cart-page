@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.container-fluid{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 4vw;
+    z-index: 1000;
+    justify-content: space-between;
+    padding: 1vw;
+    align-items: center;
+    font-size: 25px;
+}
+.navbar a{
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+  
+}
+.navbar-nav{
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    opacity: 0.8;
+}
+.container{
+    width: 100%;
+    height: 45.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+form{
+    position: absolute;
+    top: 3vw;
+    width: 85%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+form h1{
+    font-size: 28px;
+}
+form input{
+  width: 100%;
+  height: 2.5vw;
+  border: 2px solid black;
+  padding-left: 10px;
+  color: black;
+  font-weight: 600;
+}
+::placeholder {
+    color: black;
+    opacity: 0.8;
+  }
+#signinBtn{
+    left: 0;
+    width: 10%;
+    height: 2.5vw;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+}

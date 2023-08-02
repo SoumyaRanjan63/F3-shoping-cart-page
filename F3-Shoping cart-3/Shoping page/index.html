@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="products.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="proxydiv.css">
+  <title>Shop Page</title>
+</head>
+<body>
+    <nav class="navbar ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MeShop.</a>
+           <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Login</a>
+              <a class="nav-link" href="#">Signup</a>
+              <a class="nav-link" href="#">My cart</a>
+              <a class="nav-link" href="#">Profile</a>
+           </div>
+        </div>
+    </nav>
+   
+  <aside class="sidebar">
+    <div class="sidebar-container">
+       
+        <div id="colors-div">
+          <h4>Colors</h4>
+          <label><input type="checkbox" class="color-filter" value="red"> Red</label>
+          <label><input type="checkbox" class="color-filter" value="blue"> Blue</label>
+          <label><input type="checkbox" class="color-filter" value="green"> Green</label>
+          <label><input type="checkbox" class="color-filter" value="black"> Black</label>
+          <label><input type="checkbox" class="color-filter" value="white"> White</label>
+        </div>
+
+        <div id="sizes">
+            <h4>Sizes</h4>
+            <label><input type="checkbox" id="Ssize-filter" value="s"> S</label>
+            <label><input type="checkbox" id="Msize-filter" value="m"> M</label>
+            <label><input type="checkbox" id="Lsize-filter" value="l"> L</label>
+            <label><input type="checkbox" id="XLsize-filter" value="xl"> XL</label>
+        </div>
+        
+        <div id="rating">
+            <h4>Rating</h4>
+            <input type="range" id="slider" class="range-slider" min="0" max="5" value="0">
+            <label for="slider" class="label-left">0</label>
+            <label for="slider" id="label" class="label-right">5</label>
+        </div>
+
+       <div id="price-range">
+          <h4>Price Range</h4>
+          <label><input type="checkbox" id="0Price-filter" > $0 to $25</label>
+          <label><input type="checkbox" id="25Price-filter" > $25 to $50</label>
+          <label><input type="checkbox" id="50Price-filter" > $50 to $100</label>
+          <label><input type="checkbox" id="100Price-filter" > $100 onwards</label>
+       </div> 
+
+       <div class="filterbtn">
+        <button type="button" id="filterbtn">Apply Filter</button>
+       </div>
+      </div>
+  </aside>
+
+
+  <div class="search-navbar">
+    <div class="search">
+        <input type="text" id="searchInput" placeholder="Search ">
+        <button id="searchButton">Search</button>
+    </div>
+      
+      <div class="toggle-buttons">
+        <button class="toggle-button" data-category="All clothing" style="background-color: black;color: white;">ALL</button>
+        <button class="toggle-button" data-category="men's clothing">Mens</button>
+        <button class="toggle-button" data-category="women's clothing">Womens</button>
+        <button class="toggle-button" data-category="electronics">Electronics</button>
+        <button class="toggle-button" data-category="jewelery">Jewelry</button>
+      </div>
+      
+  </div>
+ 
+  
+  <div class="products">
+    <!-- Product cards will be added dynamically using JavaScript -->
+    <!-- <button class="add-to-cart" data-id="product_id_here">Add to Cart</button> -->
+  </div>
+  
+  <script src="script.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>

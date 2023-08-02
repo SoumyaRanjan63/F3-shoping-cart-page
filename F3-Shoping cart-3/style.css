@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.container-fluid{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 4vw;
+    z-index: 1000;
+    justify-content: space-between;
+    padding: 2vw;
+    align-items: center;
+    font-size: 25px;
+}
+.navbar a{
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+.navbar-nav{
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    opacity: 0.8;
+}
+.container{
+    width: 100%;
+    height: 45.5vw;
+    position: relative;
+  }
+.working-itmes{
+ margin-left: 4vw;
+ margin-top: 2vw;
+ line-height: 4vw;
+ width: 40%;
+ height: 12vw;
+ display: inline-block;
+ position: absolute;
+}
+.working-itmes .head{
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.working-itmes .para {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+}
+.working-itmes .btn{
+    width: 60%;
+    height: 3vw;
+    display: flex;
+    margin-left:1vw;
+    justify-content: space-between;
+}
+.working-itmes .btn .login-btn {
+    width: 47%;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 17px;
+}
+.working-itmes .btn .Sign-btn {
+    width: 47%;
+    background-color: white;
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+}
+.container .page-img img{
+    position: absolute;
+    width: 55vw;
+    height: auto;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(-1);
+}

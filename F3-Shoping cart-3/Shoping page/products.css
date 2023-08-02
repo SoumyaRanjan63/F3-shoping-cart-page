@@ -1,0 +1,35 @@
+body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.products{
+    position: absolute;
+    width: 80.5vw;
+    top: 12vw;
+    margin-left: 18vw;
+    border: 2px solid transparent;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.product-card{
+    width: 90%;
+    height: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.product-card img{
+    width: 50%;
+    align-self: center;
+}
+.product-card #cartbtn{
+   width: 100%;
+   align-self: center;
+   background-color: black;
+   color: white;
+   height: 2vw;
+   border: none;
+}
